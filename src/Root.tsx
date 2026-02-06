@@ -6,6 +6,7 @@ import {
   ProductLaunchVideo,
   defaultProductLaunchProps,
 } from "./ProductLaunchVideo";
+import { ThreeScene } from "./ThreeScene";
 
 // Sample data for the bar chart
 const sampleChartData: AnimatedBarChartProps = {
@@ -55,6 +56,15 @@ export const RemotionRoot: React.FC = () => {
         width={1920}
         height={1080}
         defaultProps={defaultProductLaunchProps}
+      />
+      <Composition
+        id="ThreeScene"
+        component={ThreeScene}
+        durationInFrames={300}
+        fps={30}
+        width={1920}
+        height={1080}
+        defaultProps={{ title: "Three.js + Remotion" }}
       />
     </>
   );
